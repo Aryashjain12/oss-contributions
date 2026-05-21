@@ -37,4 +37,4 @@ Moved development/testing workflow to WSL Ubuntu.
 Most OSS work involves understanding and adapting existing patterns rather than writing everything from scratch.
 
 ## Link
-https://github.com/optiqor/kerno/pull/90
+https://github.com/optiqor/kerno/pull/90cd 
