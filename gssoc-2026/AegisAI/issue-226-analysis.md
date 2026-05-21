@@ -48,3 +48,24 @@ except Exception as e:
         status_code=500,
         detail="An internal error occurred."
     )
+
+# Issue #226 Analysis
+
+## File Investigated
+backend/app/api/v1/guard.py
+
+# Vulnerable Endpoints
+
+## POST /scan
+
+Current vulnerable pattern:
+```python
+except Exception as e:
+    raise HTTPException(
+        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+        detail=str(e)
+    )
+
+## POST /scan/batch
+
+current vulnerable patterm

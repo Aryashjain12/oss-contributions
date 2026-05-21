@@ -48,3 +48,37 @@ raise HTTPException(
 
 FastAPI uses:
 HTTPException
+
+# Controlled vs Uncontrolled API Responses
+
+## Safe
+Developer-defined responses:
+
+```python
+detail="Rate limit exceeded"
+
+# Why Logger Module
+
+Logging means:
+recording internal system events for developers/operators
+
+# THIS IS THE CORE PRINCIPLE
+
+- Internal visibility
+    for developers.
+- External sanitization
+    for users.
+
+# SECURITY + LOGGING TOGETHER
+
+except Exception as e:
+    logger.exception("Guard scan failed")
+
+    raise HTTPException(
+        status_code=500,
+        detail="Internal server error"
+    )
+
+# Logger Module
+logger = logging.getLogger(__name__)
+
