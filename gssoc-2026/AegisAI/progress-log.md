@@ -18,6 +18,21 @@
 - corrected the code
 - created pr for the solution
 
+# Day 2
+- PR got reviewed and PR conflicted with recent merges
+- rebased my branch onto the lates main branch 
+- resolved the problem . 
+- checked python syntax validity
+- waiting for Pr to get reviewd again after changes
+
+# Mistakes I Made
+
+- Tried to push before completing rebase
+- Forgot conflict markers were still present
+- Used grep in PowerShell
+- Forgot git status during rebase
+- Learned how Vim works with :wq
+
 ---
 ## Implemented Security Fix
 
